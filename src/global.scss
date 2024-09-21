@@ -1,0 +1,44 @@
+$color-blue: #2f3093;
+$color-dark-blue: #031f58;
+$color-dark: #1F2732;
+$color-light-gray: #EEEFF8;
+$color-light: #f5f5f5;
+$color-yellow: #C0B596;
+
+$mobile-w: 600px;
+$tablet-w: 1100px;
+
+@mixin font-lora{
+  font-family: 'Lora', serif;
+}
+@mixin font-play-fair{
+  font-family: 'Playfair', serif;
+}
+
+@mixin shadow {
+  box-shadow: 0px 2px 3px rgb(216, 216, 216);
+}
+
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-w) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: $tablet-w) {
+    @content;
+  }
+}
+
+@mixin container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin flex($align-item: center, $justify-content: center) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}

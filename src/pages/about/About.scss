@@ -1,0 +1,38 @@
+@import '../../global.scss';
+
+.about-section {
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    .edit {
+      text-decoration: none;
+      align-self: flex-end;
+      padding: 10px 20px;
+      margin: 3rem 0;
+      font-weight: bold;
+      background-color: rgb(0, 179, 0);
+      font-size: 13px;
+      border-radius: 5px;
+      color: rgb(255, 255, 255);
+    }
+    .about {
+      
+      .title-body {
+      }
+      h4 {
+        color: gray;
+        font-size: 20px;
+        text-align: center;
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+      .body{
+        margin-top: 2rem;
+        height: 60vh;
+        overflow-y: auto;
+      }
+    }
+  }
+}

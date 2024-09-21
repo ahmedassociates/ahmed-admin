@@ -1,0 +1,76 @@
+@import '../../global.scss';
+
+.job-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  .creat{
+    align-self: flex-end;
+    margin: 3rem;
+    background-color: $color-yellow;
+    color: #fafafa;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    @include mobile {
+      font-size: 14px;
+      padding: .7rem 1.5rem;
+      margin: 2rem;
+    }
+    &:hover{
+      background-color: $color-dark;
+    }
+  }
+  .job{
+    @include flex(center, space-between);
+    @include shadow;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #fafafa;
+    max-width: 700px;
+    height: 70px;
+    @include mobile {
+      padding: 10px 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 90px;
+      justify-content: space-around
+    }
+    .info{
+      @include flex();
+      gap: 30px;
+      margin-left: 1rem;
+    }
+    h4{
+      color: gray;
+      font-size: 15px;
+      @include mobile {
+        font-size: 13px;
+      
+      }
+    }
+    span{
+      color: gray;
+    }
+    .btn{
+      @include flex();
+      gap: 15px;
+      margin-right: 1rem;
+      @include mobile {
+        align-self: flex-end;
+      }
+      .edit{
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(0, 179, 0);
+      }
+      .delete{
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+}

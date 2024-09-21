@@ -1,0 +1,46 @@
+@import '../../global.scss';
+
+.editAbout{
+  .wrapper{
+    width: 100%;
+    padding: 3rem;
+    input{
+      padding: 10px;
+      width: 400px;
+      margin-bottom: 1rem;
+      outline: none;
+      background-color: #fff;
+      border: .5px solid rgb(204, 204, 204);
+      @include mobile {
+        width: 300px;
+      }
+    };
+    .editor{
+      width: 100%;
+      .ql-editor{
+        height: 400px;
+      }
+    }
+      .blog-btn{
+        align-self: flex-end;
+        margin-top: 1rem;
+        background-color: $color-dark-blue;
+        color: #fafafa;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        @include mobile {
+          font-size: 14px;
+        }
+        &:hover{
+          background-color: $color-dark;
+        }
+      }
+      .successMsg{
+        color: green;
+        margin-top: .7rem;
+      }
+  }
+}

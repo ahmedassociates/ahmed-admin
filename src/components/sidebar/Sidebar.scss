@@ -1,0 +1,28 @@
+@import '../../global.scss';
+
+.sidebar {
+  background-color: #ffffff;
+  height: 100vh;
+  box-shadow: 2px 0px 3px rgb(216, 216, 216);
+  .list {
+    // padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    padding-top: 8rem;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: $color-dark-blue;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 10px 40px;
+      &.active{
+        background-color: $color-dark-blue;
+        color: #ffffff;
+      }
+    }
+  }
+}
